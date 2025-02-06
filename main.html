@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body data-theme="light">
+  <header>
+    <h1>My Music Player</h1>
+  </header>
+  <div class="container">
+    <!-- All Songs Section -->
+    <div class="all-song-div">
+      <h2>All Songs</h2>
+      <label for="genreFilter">Filter by Genre:</label>
+      <select id="genreFilter">
+        <option value="">All</option>
+        <option value="Pop">Pop</option>
+        <option value="Rock">Rock</option>
+        <option value="Hip Hop">Hip Hop</option>
+      </select>
+      <div id="songsList"></div>
+    </div>
+
+    <!-- Current Song Card -->
+    <div class="card-div">
+      <div id="currentSongCard">
+        <img id="currentSongImg" src="" alt="Song Image">
+        <h3 id="currentSongName">Song Name</h3>
+        <p id="currentSongArtist">Artist Name</p>
+        <audio id="audioPlayer" controls></audio>
+        <div class="controls">
+          <button id="prevButton">Previous</button>
+          <button id="addToPlaylist">Add to Playlist</button>
+          <button id="nextButton">Next</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Playlist Section -->
+    <div class="playlist-div">
+      <h2>Playlists</h2>
+      <input id="playlistName" type="text" placeholder="Enter playlist name">
+      <button id="createPlaylist">Create Playlist</button>
+      <ul id="playlistsList"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

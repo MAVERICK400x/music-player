@@ -1,0 +1,194 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header {
+    width: 100%;
+    padding: 1rem;
+    background-color: #00796b;
+    color: white;
+    text-align: center;
+    justify-content: space-between;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  #themeToggle {
+    background-color: #004d40;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  #themeToggle:hover {
+    background-color: #00695c;
+  }
+  
+  /* Layout Styles */
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 1rem;
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 1rem;
+  }
+  
+  /* All Songs Section */
+  .all-song-div {
+    background-color: #80deea;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .all-song-div h2 {
+    margin-top: 0;
+  }
+  
+  #genreFilter {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #00796b;
+    border-radius: 5px;
+  }
+  
+  #songsList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  #songsList button {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: left;
+  }
+  
+  #songsList button:hover {
+    background-color: #004d40;
+  }
+  
+  /* Current Song Card */
+  .card-div {
+    background-color: #80deea;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  #currentSongImg {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  #currentSongName {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+  }
+  
+  #currentSongArtist {
+    font-size: 1rem;
+    color: #004d40;
+  }
+  
+  audio {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .controls button {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .controls button:hover {
+    background-color: #004d40;
+  }
+  
+  /* Playlist Section */
+  .playlist-div {
+    background-color: #80deea;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+  }
+  
+  #playlistName {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #00796b;
+    border-radius: 5px;
+  }
+  
+  #createPlaylist {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  #createPlaylist:hover {
+    background-color: #004d40;
+  }
+  
+  #playlistsList {
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+  }
+  
+  #playlistsList li {
+    background-color: #00796b;
+    color: white;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  #playlistsList li:hover {
+    background-color: #004d40;
+  }
